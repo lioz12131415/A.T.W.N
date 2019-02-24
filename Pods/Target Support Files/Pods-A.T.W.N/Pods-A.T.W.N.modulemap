@@ -1,0 +1,6 @@
+framework module Pods_A_T_W_N {
+  umbrella header "Pods-A.T.W.N-umbrella.h"
+
+  export *
+  module * { export * }
+}
