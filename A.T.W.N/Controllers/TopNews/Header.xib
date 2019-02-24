@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="QUEENSBI.TTF">
+            <string>QueensParkBoldItalic</string>
+        </array>
+        <array key="QUEENS__.TTF">
+            <string>QueensPark</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5eA-rQ-SjZ" customClass="HeaderCell" customModule="A_T_W_N" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5eA-rQ-SjZ" id="ycS-zf-pHt">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-sp-bnt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAv-rs-bGp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YyO-pb-8Js">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-ca-pjd">
+                                <rect key="frame" x="157" y="9.5" width="61.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="QueensParkBoldItalic" family="Queens Park" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqZ-eS-ncu" customClass="DesignableButton" customModule="A_T_W_N" customModuleProvider="target">
+                                <rect key="frame" x="311" y="10.5" width="48" height="22.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="9UZ-pS-gui"/>
+                                    <constraint firstAttribute="height" constant="22.5" id="slV-5D-nQf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QueensPark" family="Queens Park" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="-5"/>
+                                <state key="normal" title="More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderR">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moreTouch:" destination="5eA-rQ-SjZ" eventType="touchUpInside" id="aBA-Jh-Czp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aqZ-eS-ncu" secondAttribute="trailing" constant="16" id="MVO-Bj-Tzz"/>
+                            <constraint firstItem="aqZ-eS-ncu" firstAttribute="centerY" secondItem="jpQ-ca-pjd" secondAttribute="centerY" id="R3e-pF-bnp"/>
+                            <constraint firstItem="yAv-rs-bGp" firstAttribute="top" secondItem="TYW-sp-bnt" secondAttribute="top" id="TsA-gu-IrN"/>
+                            <constraint firstItem="yAv-rs-bGp" firstAttribute="leading" secondItem="TYW-sp-bnt" secondAttribute="leading" id="Ugd-Wg-hcF"/>
+                            <constraint firstAttribute="bottom" secondItem="yAv-rs-bGp" secondAttribute="bottom" id="Vc0-dD-st6"/>
+                            <constraint firstItem="jpQ-ca-pjd" firstAttribute="centerY" secondItem="TYW-sp-bnt" secondAttribute="centerY" id="gXB-sa-0Er"/>
+                            <constraint firstAttribute="trailing" secondItem="yAv-rs-bGp" secondAttribute="trailing" id="wI9-Cs-A1v"/>
+                            <constraint firstItem="jpQ-ca-pjd" firstAttribute="centerX" secondItem="TYW-sp-bnt" secondAttribute="centerX" id="zqK-y7-HZ6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="TYW-sp-bnt" firstAttribute="leading" secondItem="ycS-zf-pHt" secondAttribute="leading" id="Qfw-JR-04f"/>
+                    <constraint firstAttribute="bottom" secondItem="TYW-sp-bnt" secondAttribute="bottom" id="YuJ-2o-KHl"/>
+                    <constraint firstItem="TYW-sp-bnt" firstAttribute="top" secondItem="ycS-zf-pHt" secondAttribute="top" id="efE-BF-lvh"/>
+                    <constraint firstAttribute="trailing" secondItem="TYW-sp-bnt" secondAttribute="trailing" id="lyl-h8-ICE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="sectionLbl" destination="jpQ-ca-pjd" id="deq-Dg-jDi"/>
+            </connections>
+            <point key="canvasLocation" x="2989.5999999999999" y="707.04647676161926"/>
+        </tableViewCell>
+    </objects>
+</document>
